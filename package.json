@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "json:server": "json-server --watch Db/db.json"
+    "json:server": "json-server --watch Db/db.json",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
