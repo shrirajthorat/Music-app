@@ -1,0 +1,13 @@
+//@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+.settings,
+.list-group-item {
+    font-family: 'Pattaya', sans-serif;
+    &:hover {
+        color: red;
+        opacity: .6;
+    }
+}
+
+body{
+    background-color: gray;
+}

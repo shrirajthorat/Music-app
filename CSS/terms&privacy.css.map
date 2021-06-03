@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EEFH,gBAAgB,EDDJ,KAAK;CDKlB",
+    "sources": [
+        "../Scss/terms&privacy.scss",
+        "../Scss/variables/_variables.scss",
+        "../Scss/mixins/_mixins.scss"
+    ],
+    "names": [],
+    "file": "terms&privacy.css"
+}

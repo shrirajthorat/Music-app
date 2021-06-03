@@ -1,0 +1,15 @@
+.settings,
+.list-group-item {
+  font-family: 'Pattaya', sans-serif;
+}
+
+.settings:hover,
+.list-group-item:hover {
+  color: red;
+  opacity: .6;
+}
+
+body {
+  background-color: gray;
+}
+/*# sourceMappingURL=settings.css.map */

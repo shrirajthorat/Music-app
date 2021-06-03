@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+.screen {
+  background-color: #fff;
+  padding: 0;
+  height: 420px;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.screen h5 {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #777;
+  text-align: center;
+}
+
+.screen h4 {
+  margin: 0 20%;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.screen input[type=checkbox] {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coverImage img {
+  width: 100%;
+}
+
+.bodyPlayer {
+  position: absolute;
+  top: 266px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 286px;
+  width: 350px;
+  background: #111;
+}
+
+.title {
+  width: 190px;
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+  position: absolute;
+  top: 275px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.player {
+  background: none;
+  text-align: center;
+  font-family: FontAwesome;
+  color: #555555;
+  font-size: 26px;
+  line-height: 26px;
+  width: 216px;
+  height: 35px;
+  position: absolute;
+  bottom: 60px;
+  left: 48%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-spacing: 0;
+}
+
+.play:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.play:before {
+  content: "\f04b";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.backward:before {
+  content: "\f04a";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.backward:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.forward:before {
+  content: "\f04e";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.forward:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+#play:checked ~ label.play:before {
+  content: "\f04c";
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.audiofooter {
+  background: none;
+  font-family: FontAwesome;
+  color: #7a7a7a;
+  font-size: 15px;
+  line-height: 15px;
+  height: 45px;
+  width: 360px;
+  position: absolute;
+  bottom: 10px;
+  left: 23px;
+  z-index: 20;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  -webkit-transition: bottom 0.3s linear;
+  transition: bottom 0.3s linear;
+}
+
+.love:before {
+  content: "\f08a";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.love:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.shuffle:before {
+  content: "\f074";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.shuffle:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.repeat:before {
+  content: "\f01e";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.repeat:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.options:before {
+  content: "\f141";
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.options:hover:before {
+  color: #bbb;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+#love:checked ~ label.love:before {
+  content: "\f004";
+  color: #ff564c;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+#shuffle:checked ~ label.shuffle:before {
+  color: #ff564c;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+#repeat:checked ~ label.repeat:before {
+  color: #ff564c;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+audio {
+  visibility: hidden;
+}
+/*# sourceMappingURL=SelectedSong.css.map */

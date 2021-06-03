@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+body .checkbox-round {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-left: 95%;
+}
+
+body .checkbox-round:checked {
+  background-color: crimson;
+}
+
+body .card {
+  width: 15rem;
+}
+
+body .card .card-body {
+  width: 100%;
+  height: 60px;
+}
+
+body .alert {
+  background-color: #e03b5c;
+}
+/*# sourceMappingURL=language.css.map */

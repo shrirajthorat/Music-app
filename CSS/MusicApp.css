@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+body {
+  background-image: url(../Assets/background-image.jpg);
+  /* Let's get this party started */
+  /* Track */
+  /* Handle */
+}
+
+body ::-webkit-scrollbar {
+  width: 10px;
+}
+
+body ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+body ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #e84545;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border: 1.5px solid white;
+  width: 50%;
+}
+
+@media (min-width: 1100px) {
+  .grid-container {
+    color: #fff;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .8fr 1.5fr .7fr;
+        grid-template-columns: .8fr 1.5fr .7fr;
+    -ms-grid-rows: 460px 350px 320px;
+        grid-template-rows: 460px 350px 320px;
+    gap: 22px 11px;
+        grid-template-areas: 'UserInfo AudioPanel Right' 'TrendingAlbums TrendingAlbums TrendingAlbums' 'ArtistWiseSong ArtistWiseSong ArtistWiseSong';
+    background: url(../Assets/background-image.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  .grid-container {
+    color: #fff;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    -ms-grid-rows: 460px 310px 320px;
+        grid-template-rows: 460px 310px 320px;
+    gap: 22px 11px;
+        grid-template-areas: 'AudioPanel Right' 'UserInfo UserInfo ' 'TrendingAlbums TrendingAlbums ' 'ArtistWiseSong ArtistWiseSong ';
+    background: url(../Assets/background-image.jpg) no-repeat;
+    background-size: cover;
+  }
+  .grid-container .Categories,
+  .grid-container .TrendingAlbums,
+  .grid-container .RecentlyPlayedSongs,
+  .grid-container #searchResult {
+    border: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    color: #fff;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 350px 350px 380px;
+        grid-template-rows: 350px 350px 380px;
+    gap: 22px 11px;
+        grid-template-areas: 'Right' 'UserInfo' 'AudioPanel' 'TrendingAlbums' 'ArtistWiseSong';
+    background: url(../Assets/background-image.jpg) no-repeat;
+    background-size: cover;
+  }
+  .grid-container .AudioPanel {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: AudioPanel;
+    margin-top: 5px;
+  }
+  .grid-container .Categories,
+  .grid-container .TrendingAlbums {
+    border: none;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .grid-container .RecentlyPlayedSongs,
+  .grid-container #searchResult {
+    margin-left: 220px;
+    margin-right: 220px;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.UserInfo {
+  grid-area: UserInfo;
+  text-align: center;
+  padding: 10px;
+      grid-template-areas: 'Categories' 'Categories';
+}
+
+.Categories {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: Categories;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.Categories .card-body {
+  padding: 1rem;
+}
+
+.Categories label.check {
+  cursor: pointer;
+  padding: 2px;
+}
+
+.Categories label.check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.Categories label.check input:checked + span {
+  border: 2px solid #ca3636;
+  -webkit-box-shadow: 3px 6px red;
+          box-shadow: 3px 6px red;
+  color: #fff;
+}
+
+.Categories label.check span {
+  padding: 7px 14px;
+  border: 2px solid #ca3636;
+  display: inline-block;
+  color: #ca3636;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.AudioPanel {
+  grid-area: AudioPanel;
+  margin-top: 30px;
+}
+
+.Right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: .7fr 1.3fr;
+      grid-template-rows: .7fr 1.3fr;
+  gap: 12px 0px;
+      grid-template-areas: 'searchResult' 'RecentlyPlayedSongs';
+  grid-area: Right;
+}
+
+.Right .table td img {
+  width: 4vw;
+}
+
+.Right .table td p {
+  color: #fff;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+#searchResult {
+  border: 2px solid red;
+  border-radius: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: searchResult;
+  padding: 10px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.RecentlyPlayedSongs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: RecentlyPlayedSongs;
+  border: 2px solid red;
+  padding: 10px 20px;
+  border-radius: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.TrendingAlbums {
+  grid-area: TrendingAlbums;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 5vh 5vh;
+  overflow-y: auto;
+}
+
+.TrendingAlbums .container .row {
+  margin: inherit;
+}
+
+.TrendingAlbums h2 {
+  padding: 0 0 0 30px;
+  margin: 22px;
+}
+
+.TrendingAlbums .profile-card {
+  max-width: 160px;
+  max-height: 160px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.TrendingAlbums .profile-card img {
+  background-position: center;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+  width: 100%;
+}
+
+.TrendingAlbums .profile-card .profile-name {
+  position: absolute;
+  left: 15px;
+  bottom: 40px;
+  font-size: 1.25em;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.TrendingAlbums .profile-card:hover img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.TrendingAlbums .profile-card:hover .profile-name {
+  bottom: 60px;
+}
+
+.ArtistWiseSong {
+  grid-area: ArtistWiseSong;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 2vh 5vh;
+  overflow-y: auto;
+}
+
+.ArtistWiseSong h2 {
+  padding: 0 0 0 30px;
+  margin: 22px;
+}
+
+.ArtistWiseSong .profile-card {
+  max-width: 160px;
+  max-height: 160px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 60%;
+  border: 6px double #fff;
+}
+
+.ArtistWiseSong .profile-card img {
+  background-position: center;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+  width: 100%;
+}
+
+.ArtistWiseSong .profile-card .profile-name {
+  position: absolute;
+  left: 20px;
+  bottom: 55px;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.ArtistWiseSong .profile-card:hover img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.ArtistWiseSong .profile-card:hover .profile-name {
+  bottom: 70px;
+}
+/*# sourceMappingURL=MusicApp.css.map */

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanetM</title>
+  <link rel="icon" href="../Assets/PlanetM.gif" type="image/gif" sizes="16x16" />
+  <!-- bootstrap script -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="../CSS/home.css" />
+</head>
+
+<body>
+  <header>
+    <!-- navbar starts -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../Assets/Song_Images/logo.png" width="25" height="25" alt="" />
+      </a>
+      <a class="navbar-brand" href="#">PlanetM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item" id="item1">
+            <a class="nav-link" href="../HTML/Home.html">Home </a>
+          </li>
+          <li class="nav-item" id="item2">
+            <a class="nav-link" href="#" id="explore">Explore</a>
+          </li>
+          <li class="nav-item" id="item3">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar Ends! -->
+  </header>
+
+  <div class="alert" id="alertbox" role="alert">
+    Please Log In
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Assets/concert.jpg" class="d-block w-100" alt="1" />
+        <div class="carousel-caption">
+          <h5 class="animate" id="firstElement">
+            <em class="fas fa-play-circle"></em>
+            Melodi
+          </h5>
+          <p class="animate" id="secondElement">Listen to you favorite melody today!</p>
+          <p class="animate" id="thirdElement"><a href="#" data-toggle="modal" data-target="#exampleModal"
+              style="color: rgb(58, 241, 12)">Know More</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Assets/background-image.jpg" class="d-block w-100" alt="2">
+        <div class="carousel-caption ">
+          <h5 class="animate"><em class="fas fa-umbrella-beach" style="color: rgb(224, 110, 110);"></em>
+            Summertime Feels
+          </h5>
+          <p class="animate" id="secondp">
+            Cool & Refereshing hits To beat the Heat
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Assets/artist.jpg" class="d-block w-100" alt="3">
+        <div class="carousel-caption ">
+          <h5 class="animate"><em class="far fa-heart"></em>
+
+            Old School Romance
+
+          </h5>
+          <p class="animate" id="thirdp">
+            CELEBRATE LOVE THE OLD FASHIONED WAY
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div id="latestalbum" class="hero pad mt-5">
+    <div class="container">
+      <!-- hero content  -->
+      <div class="hero-content">
+        <!-- heading  -->
+        <h2 id="latestAlbum"><em class="fas fa-headphones" style="color: red;"></em>
+          Latest Album
+        </h2>
+        <hr>
+        <!-- paragraph -->
+
+        <p id="latestAlbum">
+          We sing the best! <strong class="theme-color">
+            Songs
+          </strong> and now controls the World's Best <strong>Music</strong>.
+        </p>
+      </div>
+      <div class="hero-playlist">
+        <div class="row">
+          <div class="col col-md-6 col-sm-6">
+            <div class="figure">
+              <img src="../Assets/listenMusic.jpg" alt="" id="imageresponsive">
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-sm-6">
+            <!-- play list  -->
+
+            <div class="playlist-content">
+              <ul class="list-unstyled">
+                <li class="playlist-number">
+                  <div class="song-info">
+                    <h4>
+                      <em class="fas fa-music" style="color: red"></em>
+                      PlanetM Track 1
+                    </h4>
+                    <p><strong>Album</strong>:Title &nbsp; | &nbsp; <strong>Type</strong> :Rock &nbsp; | &nbsp; <strong>
+                        Singer </strong>: Dawn</p>
+                  </div>
+                  <div class="music-icon">
+                    <a href="#"><em class="fas fa-play playbutton"></em></a>
+                    <a href="#"><em class="fas fa-pause playbutton"></em></a>
+                  </div>
+                </li>
+
+                <li class="playlist-number">
+                  <div class="song-info">
+                    <h4>
+                      <em class="fas fa-music" style="color: red"></em>
+                      PlanetM Track 2
+                    </h4>
+                    <p><strong>Album</strong>:Title &nbsp; | &nbsp; <strong>Type</strong> :Rock &nbsp; | &nbsp; <strong>
+                        Singer </strong>: Dawn</p>
+                  </div>
+                  <div class="music-icon">
+                    <a href="#"><em class="fas fa-play playbutton"></em></a>
+                    <a href="#"><em class="fas fa-pause playbutton"></em></a>
+                  </div>
+                </li>
+                <li class="playlist-number">
+                  <div class="song-info">
+                    <h4>
+                      <em class="fas fa-music" style="color: red"></em>
+                      PlanetM Track 3
+                    </h4>
+                    <p><strong>Album</strong>:Title &nbsp; | &nbsp; <strong>Type</strong> :Rock &nbsp; | &nbsp; <strong>
+                        Singer </strong>: Dawn</p>
+                  </div>
+                  <div class="music-icon">
+                    <a href="#"><em class="fas fa-play playbutton"></em></a>
+                    <a href="#"><em class="fas fa-pause playbutton"></em></a>
+                  </div>
+                </li>
+                <li class="playlist-number">
+                  <div class="song-info">
+                    <h4>
+                      <em class="fas fa-music" style="color: red"></em>
+                      PlanetM Track 4
+                    </h4>
+                    <p><strong>Album</strong>:Title &nbsp; | &nbsp; <strong>Type</strong> :Rock &nbsp; | &nbsp; <strong>
+                        Singer </strong>: Dawn</p>
+                  </div>
+                  <div class="music-icon">
+                    <a href="#"><em class="fas fa-play playbutton"></em></a>
+                    <a href="#"><em class="fas fa-pause playbutton"></em></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-8">
+        <h6 class="text-muted pt-4">MUSIC THAT'S HOT AND HAPPENING!</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-8">
+        <h4 class="text-light">
+          <em class="fas fa-guitar" style="color: red"></em>
+          India's Biggest Hits
+        </h4>
+      </div>
+    </div>
+
+    <!-- OwlCarousel starts -->
+
+    <div class="row">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/1.jpeg" alt="1" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/2.jpg" alt="1" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/3.jpeg" alt="1" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/4.jpg" alt="1" />
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-8">
+        <h6 class="text-muted pt-4">MUSIC TO SHOO AWAY THE BLUES</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-8">
+        <h4 class="text-light">
+          <em class="fas fa-guitar" style="color: red"></em>
+          Feeling Emotional
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="owl-carousel owl-theme" id="owl-carousel2">
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/pic1.jpg" alt="2.1" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/pic5.jpg" alt="2.2" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/pic4.jpg" alt="2.3" />
+          </h4>
+        </div>
+        <div class="item">
+          <h4>
+            <img src="../Assets/Song_Images/pic7.jpg" alt="2.4" />
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- owl carousel END! -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title justify-content-center" id="exampleModalLabel">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <div class="input-group has-validation">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email" />
+                <div class="invalid-feedback">Please enter Email.</div>
+              </div>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else or we
+                will. We dont know.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-success ml-3 px-5 login">Login</button>
+            <div class="d-inline ml-2">
+              <strong>Don't have account...?</strong>
+
+              <a class="text-danger" href="#" data-toggle="modal" data-target="#exampleModalregister">Create Here</a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer mt-o">
+          <strong class="mx-auto text-danger"> <img src="../Assets/Song_Images/logo.png" width="30" height="30"
+              alt="" />PlanetM</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Register Page -->
+  <div class="modal fade" id="exampleModalregister" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Create a New Account</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="username" placeholder="Please enter your name: John"
+                required />
+              <p id="usercheck" style="color: red">**Username is missing</p>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="eg.john@gmail.com" required />
+              <small id="emailvalid" class="form-text text-muted invalid-feedback"> Your email must be a valid email
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter 10 digit mobile number"
+                minlength="10" maxlength="10" required />
+            </div>
+            <div class="form-group">
+              <label for="password" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="password" placeholder="Please enter password" required />
+              <p id="passcheck" style="color: red">**Please Fill the password</p>
+            </div>
+            <div class="form-group">
+              <label for="confirmpassword" class="col-form-label">Confirm Password:</label>
+              <input type="password" class="form-control" id="confirmpassword" placeholder="Please reenter the password"
+                required />
+              <p id="conpasscheck" style="color: red">**Password didn't match</p>
+            </div>
+            <button type="submit" class="btn btn-primary" id="register">Save</button>
+            <button type="button" class="btn btn-secondary m-2" data-dismiss="modal">Close</button>
+          </form>
+          <div class="d-inline ml-2">
+            <strong>Already Have an Account.?</strong>
+            <a href="Home.html">Log In</a>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal Ends-->
+
+  <!-- Footer -->
+  <footer class="pt-md-5 border-top bg-dark mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="../Assets/Song_Images/logo.png" class="img" alt="" width="20" height="20" />
+          <strong class="text-light">PlanetM</strong>
+          <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
+        </div>
+        <div class="col-12 col-sm">
+          <h5 class="text-danger">Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm">
+          <h5 class="text-danger">Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm">
+          <h5 class="text-danger">About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="../js/carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="../JS/signIn.js"></script>
+  <script src="../JS/signUp.js"></script>
+</body>
+
+</html>

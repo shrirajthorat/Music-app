@@ -1,0 +1,178 @@
+{
+  "Songs": [
+    {
+      "Song_Id": "1",
+      "Song_Language": "English",
+      "Song_Name": "English Song One",
+      "Song_Pic": "../Assets/Song_Images/pic4.jpg",
+      "Song_Artist": "Jubin N",
+      "Song_Url": "../Assets/Music/English/englishOne.mp3",
+      "Song_Album_Category": "Rock"
+    },
+    {
+      "Song_Id": "2",
+      "Song_Language": "Hindi",
+      "Song_Name": "Hindi Song One",
+      "Song_Pic": "../Assets/Song_Images/pic2.jpg",
+      "Song_Artist": "Jubin N",
+      "Song_Url": "../Assets/Music/Hindi/hindiOne.mp3",
+      "Song_Album_Category": "Rock"
+    },
+    {
+      "Song_Id": "3",
+      "Song_Language": "Marathi",
+      "Song_Name": "Marathi Song One",
+      "Song_Pic": "../Assets/Song_Images/pic10.jpg",
+      "Song_Artist": "Shreya Ghoshal",
+      "Song_Url": "../Assets/Music/Marathi/marathiOne.mp3",
+      "Song_Album_Category": "Rock"
+    },
+    {
+      "Song_Id": "4",
+      "Song_Language": "English",
+      "Song_Name": "English Song Two",
+      "Song_Pic": "../Assets/Song_Images/pic12.jpg",
+      "Song_Artist": "Shreya Ghoshal",
+      "Song_Url": "../Assets/Music/English/englishTwo.mp3",
+      "Song_Album_Category": "Dance"
+    },
+    {
+      "Song_Id": "5",
+      "Song_Language": "Hindi",
+      "Song_Name": "Hindi Song Two",
+      "Song_Pic": "../Assets/Song_Images/pic15.jpg",
+      "Song_Artist": "Arjit Singh",
+      "Song_Url": "../Assets/Music/Hindi/hindiTwo.mp3",
+      "Song_Album_Category": "Dance"
+    },
+    {
+      "Song_Id": "6",
+      "Song_Language": "Marathi",
+      "Song_Name": "Marathi Song Two",
+      "Song_Pic": "../Assets/Song_Images/pic1.jpg",
+      "Song_Artist": "Arjit Singh",
+      "Song_Url": "../Assets/Music/Marathi/marathiTwo.mp3",
+      "Song_Album_Category": "Dance"
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "Name": "Mitesh",
+      "Password": "abc123",
+      "Phone": "12345678",
+      "Email": "abc@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/male.png",
+      "Favorite": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": 2,
+      "Name": "Prashant",
+      "Password": "pra123",
+      "Phone": "342342323",
+      "Email": "pra@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/male.png",
+      "Favorite": []
+    },
+    {
+      "id": 3,
+      "Name": "Shriraj",
+      "Password": "shr123",
+      "Phone": "563442",
+      "Email": "shr@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/male.png",
+      "Favorite": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "id": 4,
+      "Name": "Ashish",
+      "Password": "ash123",
+      "Phone": "963442",
+      "Email": "ash@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/male.png",
+      "Favorite": [
+        "5",
+        "3"
+      ]
+    },
+    {
+      "id": 5,
+      "Name": "Arshi Saxena",
+      "Password": "ars123",
+      "Phone": "863442",
+      "Email": "ars@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/female.png",
+      "Favorite": [
+        "5",
+        "2"
+      ]
+    },
+    {
+      "id": 6,
+      "Name": "Rahul",
+      "Password": "rah123",
+      "Phone": "463442",
+      "Email": "rah@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/male.png",
+      "Favorite": [
+        "5",
+        "3"
+      ]
+    },
+    {
+      "id": 7,
+      "Name": "Abhi",
+      "Password": "abhi123",
+      "Phone": "993489",
+      "Email": "abhi@gmail.com",
+      "Profile_Pic": "../Assets/Profile_Images/female.png",
+      "Favorite": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "id": 8,
+      "Name": "john",
+      "Email": "john@gmail.com",
+      "Phone": "2222222222",
+      "Password": "john123",
+      "Profile_Pic": null,
+      "Favorite": []
+    },
+    {
+      "id": 9,
+      "Name": "Shriraj",
+      "Email": "abc@gmail.com",
+      "Phone": "1111111111",
+      "Password": "llll",
+      "Profile_Pic": ""
+    },
+    {
+      "id": 10,
+      "Name": "mitesh",
+      "Email": "mit@gmail.com",
+      "Phone": "1234578697",
+      "Password": "123456",
+      "Profile_Pic": null,
+      "Favorite": [
+        "1"
+      ]
+    },
+    {
+      "id": 11,
+      "Name": "Ganesh",
+      "Email": "c@gmail.com",
+      "Phone": "3333333333",
+      "Password": "llll",
+      "Profile_Pic": "../Assets/Profile_Images/male.png",
+      "Favorite": []
+    }
+  ]
+}

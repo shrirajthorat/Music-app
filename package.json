@@ -1,0 +1,19 @@
+{
+  "name": "g3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch Db/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CDAC-JAVA-Apr21/G3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CDAC-JAVA-Apr21/G3/issues"
+  },
+  "homepage": "https://github.com/CDAC-JAVA-Apr21/G3#readme",
+  "description": ""
+}

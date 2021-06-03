@@ -1,0 +1,5 @@
+projectKey=FET-Java-PlanetM-G3
+serverUrl=http://172.27.12.78
+dashboardUrl=http://172.27.12.78/dashboard/index/FET-Java-PlanetM-G3
+ceTaskId=AXm_EHBna_m12xx6Rv5j
+ceTaskUrl=http://172.27.12.78/api/ce/task?id=AXm_EHBna_m12xx6Rv5j

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Library</title>
+  <link rel="icon" href="../Assets/PlanetM.gif" type="image/gif" sizes="16x16">
+
+  <!-- Music css -->
+  <link rel="Stylesheet" href="../CSS/SelectedSong.css" />
+  <link rel="Stylesheet" href="../CSS/MusicApp.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <!--Jquerry-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+    
+  <script src="../JS/GetSongs.js"></script>
+  <script src="../JS/Logout.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="col col-sm-4 col-md-3 col-lg-5">
+        <a class="navbar-brand" href="#">
+          <img src="../Assets/Song_Images/logo.png" width="25" height="25" alt="" />
+        </a>
+        <a class="navbar-brand" href="#">PlanetM</a>
+      </div>
+
+      <form class="col col-sm-7 col-md-5 col-lg-4 form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-1" type="text" placeholder="Search" aria-label="Search" id="searchValue" />
+        <button class="btn btn-outline-danger" type="button" id="searchInput">Search</button>
+      </form>
+
+      <button class="col-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="col-3 collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" id="item1">
+              <a class="nav-link float-right" href="../HTML/MusicAPP.HTML">Home </a>
+            </li>
+
+            <li class="nav-item dropdown" id="item2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="../Assets/Profile_Images/profile-icon.webp" width="30px" alt="">
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-muted" href="../HTML/user-profile.html">My Profile</a>
+                <a class="dropdown-item text-muted" href="../HTML/settings.html">Settings</a>
+            </li>
+
+            <li class="nav-item" id="item3">
+              <a class="nav-link Logout" href="../HTML/Home.html">Logout</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- new grid start -->
+
+  <div class="grid-container">
+    <!--Artist category-->
+    <div class="UserInfo">
+      <div class="Categories">
+        <div class="card-body">
+          <h3>Select Your Favourite Artist</h3>
+
+          <hr class="mb-30" />
+          <label class="check"> <input type="checkbox" onclick="sortByArtist()" class="btn-outline-primary" name="artistCategory" value="Arjit Singh" /> <span>Arjit Singh</span> </label>
+          <label class="check"> <input type="checkbox" onclick="sortByArtist()" class="btn-outline-primary" name="artistCategory" value="Jubin N" /> <span>Jubin N</span> </label>
+          <label class="check"> <input type="checkbox" onclick="sortByArtist()" class="btn-outline-primary" name="artistCategory" value="Shreya Ghoshal" /> <span>Shreya G</span> </label>
+          <label class="check"> <input type="checkbox" onclick="sortByArtist()" class="btn-outline-primary" name="artistCategory" value="Sunidhi Chouhan" /> <span>Sunidhi C</span> </label>
+        </div>
+      </div>
+      <div class="Categories">
+        <div class="card-body">
+          <h3>Select category</h3>
+          <hr class="mb-30" />
+          <label class="check"> <input type="checkbox" onclick="category()" class="btn-outline-primary" name="category" value="Rock" /> <span>ROCK</span> </label>
+          <label class="check"> <input type="checkbox" onclick="category()" class="btn-outline-primary" name="category" value="Dance" /> <span>Dance</span> </label>
+          <label class="check"> <input type="checkbox" onclick="category()" class="btn-outline-primary" name="category" value="Jazz" /> <span>JAZZ</span> </label>
+        </div>
+      </div>
+    </div>
+
+    <!--Adio panel-->
+    <div class="AudioPanel">
+      <article class="screen">
+        <input type="checkbox" value="None" id="magicButton" name="check" />
+
+        <div class="coverImage">
+          <!-- <img src="" id="songImage"alt=""/> -->
+        </div>
+        <div class="bodyPlayer"></div>
+        <div class="info">
+          <h4 class="title">PUT SONG TITLE HERE</h4>
+          <h5 class="text">ALBUM/ARTIST NAME</h5>
+        </div>
+        <audio preload="auto" id="audio" controls>
+        </audio>
+        <table class="player">
+          <td><input type="checkbox" id="backward" /><label class="backward" for="backward"></label></td>
+          <td><input type="button" id="play" title="Play" onclick="togglePlayPause()" /></td>
+          <td><input type="checkbox" id="forward" /><label class="forward" for="forward"></label></td>
+        </table>
+        <table class="audiofooter">
+          <td><input type="checkbox" id="love"  /><label class="love" for="love"></label></td>
+          <td><input type="checkbox" id="shuffle" onclick="shuffle()" /><label class="shuffle" for="shuffle"></label></td>
+          <td><input type="checkbox" id="repeat" checked /><label class="repeat" for="repeat"></label></td>
+          <td>
+            <a id="email" href="" onclick="sendEmail()" style="color: white; text-decoration: none; padding-bottom: 10px; margin-right: 20px"> ... </a>
+          </td>
+        </table>
+      </article>
+    </div>
+
+    <!--Right side-->
+    <div class="Right">
+      <div id="searchResult">
+        <div id="SongsList" class="table table-borderless"></div>
+      </div>
+      <div class="RecentlyPlayedSongs">
+        <h4>Recently Played Songs</h4>
+        <br />
+        <div id="LastPlayedSong" class="table table-borderless"></div>
+      </div>
+    </div>
+
+    <!--Trending Songs-->
+    <div class="TrendingAlbums">
+      <h2 id="Trending-section">Trending Songs</h2>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+
+    <!--Artistwise Song-->
+    <div class="ArtistWiseSong">
+      <h2 id="Artist-section">Artists Songs</h2>
+
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- new grid end -->
+
+  <!-- Footer -->
+  <footer class="pt-md-5 border-top bg-dark mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="../Assets/Song_Images/logo.png" class="img" alt="" width="20" height="20" />
+          <strong class="text-light">PlanetM</strong>
+          <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
+        </div>
+        <div class="col-12 col-sm">
+          <h5 class="text-danger">Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm">
+          <h5 class="text-danger">Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm">
+          <h5 class="text-danger">About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

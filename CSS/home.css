@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Noto+Sans+JP:wght@300&display=swap");
+body {
+  background-color: black;
+  font-size: large;
+}
+
+#item1 {
+  padding-left: 300px;
+}
+
+#item2 {
+  padding-left: 20px;
+}
+
+#item3 {
+  padding-left: 20px;
+}
+
+.item {
+  padding: 25px;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-width: 300px;
+}
+
+.carousel-caption h5 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 2vw;
+  margin: 0 0.5rem;
+  padding-bottom: 30px;
+  -webkit-animation: bounceInUp;
+          animation: bounceInUp;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  color: black;
+  /* don't forget to set a duration! */
+}
+
+#secondp {
+  padding-bottom: 300px;
+}
+
+.carousel-caption p {
+  font-size: 3vw;
+  margin: 0 0.5rem;
+  padding-bottom: 30px;
+  -webkit-animation: bounceInLeft;
+          animation: bounceInLeft;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  color: red;
+  /* don't forget to set a duration! */
+}
+
+#thirdp {
+  padding-bottom: 200px;
+}
+
+#thirdElement {
+  margin: 0 0.5rem;
+  padding-bottom: 200px;
+  -webkit-animation: bounceInRight;
+          animation: bounceInRight;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  /* don't forget to set a duration! */
+}
+
+/*   hero css */
+.hero .hero-content {
+  text-align: center;
+}
+
+.hero-content h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 45px;
+}
+
+.hero-content hr {
+  max-width: 450px;
+  margin: 15px 30%;
+  border-top: 1px solid #ddd;
+}
+
+.playlist-content .playlist-number {
+  margin: 1vw;
+  height: 6vw;
+  padding: 1%;
+  background: rgba(240, 188, 240, 0.667);
+  border: 1px solid #ddd;
+}
+
+.playlist-content .playlist-number h4:hover {
+  color: red;
+}
+
+.playlist-content .playlist-number .song-info {
+  float: left;
+}
+
+.playlist-content .playlist-number .song-info h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.playlist-content .playlist-number .music-icon {
+  float: right;
+}
+
+.playlist-content .playlist-number .music-icon a {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Hero ends*/
+.modal-body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#940f0f), color-stop(whitesmoke), to(#554f4f));
+  background-image: linear-gradient(to right, #940f0f, whitesmoke, #554f4f);
+  background-color: red;
+}
+
+.form-group {
+  font-family: "Pattaya", sans-serif;
+}
+
+.modal-header {
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#940f0f), to(whitesmoke));
+  background-image: linear-gradient(#940f0f, whitesmoke);
+  text-align: center;
+  font-family: "Pattaya", sans-serif;
+}
+
+.modalTitle {
+  margin: auto;
+  font-family: "Pattaya", sans-serif;
+}
+
+.modal-footer {
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, right top, from(#940f0f), color-stop(whitesmoke), to(#554f4f));
+  background-image: linear-gradient(to right, #940f0f, whitesmoke, #554f4f);
+  font-family: "Pattaya", sans-serif;
+}
+
+.alert {
+  background-color: #e03b5c;
+}
+
+#latestalbum {
+  color: whitesmoke;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption h5 {
+    font-size: 5vw;
+    text-transform: uppercase;
+  }
+  #secondp {
+    padding-bottom: 400px;
+  }
+  .carousel-caption p {
+    font-size: 3vw;
+    margin: 0 0.5rem;
+  }
+  #thirdp {
+    padding-bottom: 400px;
+  }
+  #thirdElement {
+    margin: 0 0.5rem;
+    padding-bottom: 450px;
+  }
+  .carousel-control-prev {
+    padding-bottom: 20%;
+  }
+  .carousel-control-next {
+    padding-bottom: 20%;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  #imageresponsive {
+    width: 90vw;
+  }
+  .playlist-content .playlist-number {
+    height: 45vw;
+    padding: 2%;
+    background: rgba(240, 188, 240, 0.667);
+    border: 1px solid #ddd;
+  }
+  .playlist-content .playlist-number h4:hover {
+    color: red;
+  }
+}
+/*# sourceMappingURL=home.css.map */

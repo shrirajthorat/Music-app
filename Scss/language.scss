@@ -1,0 +1,33 @@
+@import '../Scss/variables/variables';
+@import '../Scss/mixins/mixins';
+
+body {
+    @include body-style;
+
+    .checkbox-round {
+        @include sizing(1.3rem,1.3rem);
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        -webkit-appearance: none;
+        cursor: pointer;
+        margin-left: 95%;
+    }
+
+    .checkbox-round:checked {
+        background-color: $highlight-color;
+    }
+
+    .card {
+        width: 15rem;
+
+        .card-body {
+            @include sizing(100%,60px);
+        }
+    }
+
+    .alert {
+        background-color: $alert-color;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS;AACT,gBAAgB,CAAC;EACb,WAAW,EAAE,qBAAqB;CAKrC;;AAPD,AAGI,SAHK,AAGJ,MAAM;AAFX,gBAAgB,AAEX,MAAM,CAAC;EACJ,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,EAAE;CACd;;AAGL,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "../Scss/settings.scss"
+    ],
+    "names": [],
+    "file": "settings.css"
+}

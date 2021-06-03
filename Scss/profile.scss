@@ -1,0 +1,45 @@
+@import '../Scss/variables/variables';
+@import '../Scss/mixins/mixins';
+
+body {
+    @include body-style;
+
+    #profile-pic {
+        @include sizing(17vw, 17vw);
+    }
+
+    #song-img {
+        @include sizing(5vw, 5vw);
+    }
+
+    #playlist-text {
+        margin-left: 5%;
+        @include sizing(90%, 34px);
+    }
+
+    h5 {
+        @include padding(0.3vw);
+    }
+
+    figure {
+        @include padding(3%);
+    }
+
+    .div-padding {
+        padding-bottom: 5%
+    }
+
+    #empty-playlist {
+        @include padding(3%);
+    }
+
+    .user-info{
+        padding-bottom: 3%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: x-large;
+    }
+}

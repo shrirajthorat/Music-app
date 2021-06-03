@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+}
+
+body #profile-pic {
+  width: 17vw;
+  height: 17vw;
+}
+
+body #song-img {
+  width: 5vw;
+  height: 5vw;
+}
+
+body #playlist-text {
+  margin-left: 5%;
+  width: 90%;
+  height: 34px;
+}
+
+body h5 {
+  padding: 0.3vw;
+}
+
+body figure {
+  padding: 3%;
+}
+
+body .div-padding {
+  padding-bottom: 5%;
+}
+
+body #empty-playlist {
+  padding: 3%;
+}
+
+body .user-info {
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: x-large;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

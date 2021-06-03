@@ -1,0 +1,6 @@
+@import '../Scss/variables/variables';
+@import '../Scss/mixins/mixins';
+
+body {
+    @include body-style;
+}

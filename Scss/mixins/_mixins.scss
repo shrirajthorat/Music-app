@@ -1,0 +1,58 @@
+@mixin body-style {
+  background-color: $base-color;
+}
+
+@mixin sizing($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin padding($size) {
+  padding: $size;
+}
+
+@mixin Card($max-width, $max-height, $bottom-name, $bottom-hover, $left, $border, $border-radius, $font-size) {
+  .profile-card {
+    max-width: $max-width;
+    max-height: $max-height;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: $border-radius;
+    border: $border;
+    img {
+      background-position: center;
+      transition: all linear 0.25s;
+      width: 100%;
+    }
+
+    .profile-name {
+      position: absolute;
+      left: $left; //30px
+      bottom: $bottom-name; //30px
+      font-size: $font-size;
+      color: #fff;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      transition: all linear 0.25s;
+    }
+
+    &:hover img {
+      filter: grayscale(100%);
+    }
+
+    &:hover .profile-name {
+      bottom: $bottom-hover; //70px
+    }
+  }
+}
+
+@mixin headingForSection {
+  h2 {
+    padding: 0 0 0 30px;
+    margin: 22px;
+  }
+}
