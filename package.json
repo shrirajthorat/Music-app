@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CDAC-JAVA-Apr21/G3.git"
+    "url": "git+https://github.com/shrirajthorat/Music-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CDAC-JAVA-Apr21/G3/issues"
+    "url": "https://github.com/shrirajthorat/Music-app/issues"
   },
-  "homepage": "https://github.com/CDAC-JAVA-Apr21/G3#readme",
+  "homepage": "https://github.com/shrirajthorat/Music-app/blob/shrirajthorat/HTML/Home.html",
   "description": ""
 }
